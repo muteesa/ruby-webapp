@@ -1,6 +1,7 @@
 class ArticlesController < ApplicationController
 	#thse should all set_atcile before they fun
 	before_action :set_article , only: [:edit, :update, :show, :destroy]
+	http_basic_authenticate_with name: "fred", password: "fred123", except: [:index, :show]
 
 	def index
 	@articles = Article.all

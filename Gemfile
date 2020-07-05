@@ -22,8 +22,10 @@ gem 'jbuilder', '~> 2.7'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 #add bootstrap4 by Fred
-gem 'bootstrap', '~> 4.5.0'
-gem 'jquery-rails'
+#gem 'bootstrap', '~> 4.5.0'
+#gem 'jquery-rails'
+#above removed to install with yarn
+
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'

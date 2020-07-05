@@ -1,18 +1,35 @@
 <div class = "container text-center">
-<h1>Showing selected article</h1>
+	
+		<h1>Showing selected article</h1>
 
 <p>
-
-Title: <%= @article.title %>
+<div class = "card">
+	<div class="card-header">This is the Article details</div>
+	<div class="card-content">
+		<Strong>	Title:</Strong> <%= @article.title %>
 
 </p>
 
 <p>
 
-Description: <%= @article.description %>
+<Strong>Description: </Strong><%= @article.description %>
 
 </p>
+	</div>
+	<div class="card-footer">
+
+
+<h2>Comments</h2>
+<%= render @article.comments %>
+
+
+
+<h2>Add a comment:</h2>
+<%= render 'comments/form' %>
+
+
 <%= link_to "Edit this article", edit_article_path(@article) %> | 
 <%= link_to "Back to articles Listing", articles_path %>
+</div>
 
 </div>
